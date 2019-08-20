@@ -24,7 +24,7 @@ Answer the following questions. First, without external resources. Challenge you
     if that block of code works and it will make it easier to fix.
 
   Researched answer:Testing makes it easier to trace a bug when your working with a specific block of code than if you have to go trough the 
-    whoe application. 
+    whole application. 
 
 
 4. What is the difference between a class and an object?

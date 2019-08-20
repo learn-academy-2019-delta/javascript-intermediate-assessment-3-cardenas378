@@ -4,7 +4,7 @@
 // Be sure to use all given test cases
 
 // 1. Write a function called getFib that returns the first 10 numbers of the Fibonacci sequence in an array. Expected output: [1, 1, 2, 3, 5, 8, 13, 21, 34, 55]
-// let getFib = [1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811]
+"1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181, 6765, 10946, 17711, 28657, 46368, 75025, 121393, 196418, 317811"
 
 // function fibonacci(arr){
 //   let newArr = []
@@ -15,7 +15,17 @@
 //     }
 //   return newArr
 // }
-//   console.log(fibonacci(getFib))
+
+let getFib = (n) => {
+  if (n === 1 ){
+    return [0,1]
+  }else {
+    let fib = getFib (n-1);
+    fib.push(fib[fib.length - 1] + fib[fib.length - 2])
+      return fib;
+  }
+}
+  console.log(getFib(10))
 
 // 2. Write a function called oddChecker that takes in an array and returns a new array of only odd numbers.
 
@@ -80,6 +90,19 @@
 //     })
 // })
 
+
+// let arr1 = [3, 4, 5]
+// let arr2 = [23, -9, 0]
+// let arr3 = [4.5, -4.5, 12]
+
+// const multTwo = (array) => {
+//   return array.map(array => array*2)
+// }
+ 
+
+// console.log(multTwo(arr1))
+// console.log(multTwo(arr2))
+// console.log(multTwo(arr3))
 
 
 // 6. Write a function called letterCounter that logs the number of times the letter "l" appears in ourString.
